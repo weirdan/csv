@@ -59,6 +59,8 @@ enum Bom: string
 
     private static function getContents(Stream|SplFileObject $sequence, int $length, int $offset): ?string
     {
+        return null;
+
         $position = $sequence->ftell();
         if (false === $position) {
             return null;
